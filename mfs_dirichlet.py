@@ -31,7 +31,7 @@ def plot(alphas, plot_points):
 if __name__ == '__main__':
     boundary = boundary_polygons(4, 400, True)
     #boundary = circle_parameterization(1, 400)
-    source = create_source_points(boundary, 0.2, 2)
+    source, _ = create_source_points(boundary, 0.2, 2)
     inner = create_inner_points(20, boundary)
     plot_points = create_plot_points(100, boundary)
 
